@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  padding: 14px 60px;
+
+  @media (max-width: 450px) {
+    padding: 14px 10px;
+  }
+  .heading {
+    background-color: black;
+    color: rgb(228, 169, 5);
+    font-size: 12px;
+  }
+  .body-wrapper {
+    width: 100%;
+    height: 540px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .post {
+    width: calc(25% - 15px);
+    height: calc(50% - 10px);
+    border-radius: 12px;
+    @media (max-width: 950px) {
+      width: calc(33.3% - 15px);
+    }
+    @media (max-width: 750px) {
+      width: calc(50% - 10px);
+    }
+    @media (max-width: 320px) {
+      width: 100%;
+      padding: 0px;
+    }
+    .image-wrapper {
+      width: 100%;
+      height: 75%;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      span {
+        position: absolute;
+        padding: 2px;
+        font-size: 15px;
+        color: white;
+        background-color: rgba(65, 64, 64, 0.7);
+        position: absolute;
+        left: 0px;
+      }
+      .price {
+        width: 25%;
+        height: 25%;
+        background-color: rgba(255, 255, 255, 0.745);
+        bottom: 4px;
+        position: absolute;
+        left: 4px;
+        span {
+          font-size: 14px;
+          background-color: rgba(0, 0, 255, 0);
+          position: absolute;
+          top: 0px;
+          color: black;
+        }
+        p {
+          font-size: small;
+          position: absolute;
+          bottom: 0px;
+        }
+      }
+      .text {
+        h1 {
+          position: absolute;
+          bottom: 10px;
+          right: 4px;
+          font-size: medium;
+          color: white;
+        }
+      }
+    }
+    .detail {
+      width: 100%;
+      height: 25%;
+      background-color: rgb(247, 248, 249);
+      padding: 6px;
+      .title {
+        font-size: 14px;
+        color: red;
+      }
+      .km {
+        font-size: 12px;
+      }
+      .date {
+        color: black;
+        font-size: 12px;
+        margin-top: 4px;
+        background-color: rgba(240, 248, 255, 0);
+        display: flex;
+        span {
+          font-size: 12px;
+          background-color: rgba(240, 248, 255, 0);
+          color: rgb(62, 113, 253);
+        }
+      }
+    }
+  }
+}
